@@ -30,14 +30,16 @@
 (use-package paredit
   :ensure t
   :hook
-  (lisp-interaction-mode . paredit-mode))
+  (lisp-interaction-mode . paredit-mode)
+  (emacs-lisp-mode . paredit-mode))
 
 ;; This package automaticallly indents your source code
 ;; I'm just enabling it for lisp here
 (use-package aggressive-indent
   :ensure t
   :hook
-  (lisp-interaction-mode . aggressive-indent-mode))
+  (lisp-interaction-mode . aggressive-indent-mode)
+  (emacs-lisp-mode . aggressive-indent-mode))
 
 ;; This package will show possible completions as you type
 (use-package company
