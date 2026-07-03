@@ -1,4 +1,4 @@
-;; DISABLE the startup help screen
+;; Disable the startup help screen
 (setq inhibit-startup-message t)
 
 ;; Stop emacs from modifying init.el
@@ -46,6 +46,9 @@
   :ensure t
   :config
   (global-company-mode))
+
+;; Show available keybindings after a leader key is pressed
+(which-key-mode 1)
 
 ;; This package presents an interactive menu for various functions like M-x
 (use-package ivy
